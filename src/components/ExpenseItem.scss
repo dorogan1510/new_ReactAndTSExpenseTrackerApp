@@ -1,0 +1,82 @@
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    background-color: rgb(31, 31, 31);
+    border-radius: 30px;
+
+    &__date {
+        color: white;
+
+        display: flex;
+        flex-direction: column;
+        width: 5.5rem;
+        height: 5.5rem;
+        background: linear-gradient(89.94deg, #e25656 0.05%, #5f0303 99.95%);
+        border-radius: 23px;
+        align-items: center;
+        justify-content: center;
+
+        &__year {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        &__month {
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        &__day {
+            font-size: 22px;
+            font-weight: 400;
+        }
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-end;
+        flex-flow: column-reverse;
+        justify-content: flex-start;
+        flex: 1;
+
+        & h2 {
+            font-size: 1rem;
+            font-weight: normal;
+            flex: 1;
+            margin: 0 1rem;
+            color: white;
+        }
+    }
+
+    &__price {
+        font-size: 18px;
+        font-weight: inherit;
+        color: white;
+        background: linear-gradient(89.94deg, #e25656 0.05%, #5f0303 99.95%);
+        padding: 0.5rem;
+
+        border-radius: 15px;
+    }
+}
+
+@media (min-width: 580px) {
+    .expense-item__description {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        flex: 1;
+    }
+
+    .expense-item__description h2 {
+        font-size: 1.25rem;
+    }
+
+    .expense-item__price {
+        padding: 0.5rem 1.5rem;
+    }
+}

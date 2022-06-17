@@ -1,0 +1,53 @@
+.new-expense {
+    background-color: rgb(59 59 59 / 90%);
+
+    padding: 1rem;
+    margin: 1rem auto 2rem;
+    width: 50rem;
+    max-width: 95%;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+
+    &__actions {
+        text-align: right;
+    }
+
+    &__controls {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        text-align: left;
+        color: white;
+    }
+
+    &__control label {
+        font-weight: inherit;
+        margin-bottom: 0.5rem;
+        display: block;
+    }
+
+    &__control input {
+        font: inherit;
+        padding: 0.5rem;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        width: 20rem;
+        max-width: 100%;
+    }
+
+    button {
+        font: inherit;
+        cursor: pointer;
+        padding: 1rem 2rem;
+        background: linear-gradient(89.94deg, #e25656 0.05%, #5f0303 99.95%);
+        border: 0;
+        color: white;
+        border-radius: 12px;
+        margin-right: 1rem;
+    }
+}
+.btn-add-new-expense {
+    margin-right: 0 !important;
+}
